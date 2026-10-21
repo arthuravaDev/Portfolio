@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logos/favicon.png">
+    <title>Arthur Nguyen's Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section - This is the introduction -->
+    <section id="home">
+      <h1>Hello, I'm <span>Arthur</span><br>
+        Welcome to my portfolio.</h1>
+      <a href="#about" class="learn-more">Learn More About Me</a>
+    </section>
+
+    <!-- About Section - This talks about me and shows my skills -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-left">
+        <img src="images/dog.jpeg" alt="English Bulldog" width="200" height="200">
+        <p>My name is Arthur Nguyen. I am a college student majoring in Computer Science with a minor in Art Studio.
+          I&#39;m passionate about technology and art, and I enjoy learning new skills and working on projects that allow
+          me to combine these interests. Outside of school, I&#39;m also a proud owner of an English Bulldog!</p>
+      </div>
+
+      <div class="about-right">
+        <h3>Skills</h3>
+        <div class="skills-container">
+          <div class="skill-box">
+            <img src="logos/python.png" alt="Python" width="60" height="60">
+            <span>Python</span>
+          </div>
+          <div class="skill-box">
+            <img src="logos/html.png" alt="HTML" width="60" height="60">
+            <span>HTML</span>
+          </div>
+          <div class="skill-box">
+            <img src="logos/css.png" alt="CSS" width="60" height="60">
+            <span>CSS</span>
+          </div>
+          <div class="skill-box">
+            <img src="logos/illustrator.png" alt="Illustrator" width="60" height="60">
+            <span>Illustrator</span>
+          </div>
+          <div class="skill-box">
+            <img src="logos/photoshop.png" alt="Photoshop" width="60" height="60">
+            <span>Photoshop</span>
+          </div>
+          <div class="skill-box">
+            <img src="logos/premiere.png" alt="Premiere Pro" width="60" height="60">
+            <span>Premiere Pro</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section - This shows my artwork projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+
+        <!-- Project 1 -->
+        <a href="artwork/artproj1.html" target="_blank" rel="noopener noreferrer" class="project-card">
+          <img src="images/ars103_surrealism.png" alt="Surrealism Artwork">
+          <div class="project-overlay">
+            <h3>Surrealism</h3>
+            <span>View Project</span>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="artwork/artproj2.html" target="_blank" rel="noopener noreferrer" class="project-card">
+          <img src="images/ars103_movie_poster_redesign.png" alt="Whiplash Movie Poster Redesign">
+          <div class="project-overlay">
+            <h3>Movie Poster Redesign</h3>
+            <span>View Project</span>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="artwork/artproj3.html" target="_blank" rel="noopener noreferrer" class="project-card">
+          <img src="images/ars104_isometric.png" alt="Isometric Artwork">
+          <div class="project-overlay">
+            <h3>Isometric</h3>
+            <span>View Project</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section - This is where visitors can send me a message. -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a question or want to connect? Please leave your details<br>
+        below or click my email, and I&#39;ll get back to you as soon as I can!</p>
+      <form class="contact-form" action="mailto:avn@uab.edu" method="post" enctype="text/plain">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-field">
+          <label for="email">Email <span>(required)</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="message">Message <span>(required)</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button class="button button--submit" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <a href="#home" class="arrow-home">↑</a>
+      <div class="footer-links">
+        <a href="https://github.com/arthuravaDev" target="_blank">
+          <img src="logos/github.png" alt="GitHub" width="35" height="35">
+        </a>
+        <a href="mailto:avn@uab.edu">
+          <img src="logos/email.png" alt="Email" width="35" height="35">
+        </a>
+      </div>
+      <p>Arthur Nguyen © 2026</p>
+    </footer>
+  </body>
+</html>
